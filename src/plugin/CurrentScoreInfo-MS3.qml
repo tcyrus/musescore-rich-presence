@@ -17,8 +17,8 @@ MuseScore {
       }
       function fetchScoreInfo(obj) {
             const score = {};
-            for (var prop in obj) {
-                if (typeof obj[prop] != "function" && typeof obj[prop] != "object") {
+            for (const prop in obj) {
+                if (typeof obj[prop] !== "function" && typeof obj[prop] !== "object") {
                     score[prop] = obj[prop];
                 }
             }
